@@ -82,7 +82,7 @@ public class MemoController {
         return  new ResponseEntity<>(new MemoResponseDto(memo), HttpStatus.OK);
     }
 
-    @PutMapping("/{id}")
+    @PatchMapping("/{id}")
     public ResponseEntity<MemoResponseDto> updateTitle(
             @PathVariable Long id,
             @RequestBody MemoRequestDto dto
